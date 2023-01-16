@@ -20,10 +20,6 @@ public class CardGameApp {
     }
 
     static PlayerHand createHand(Deck deck) {
-        return new PlayerHand(new Card[]{
-                deck.takeCard(),
-                deck.takeCard(),
-                deck.takeCard()
-        });
+        return new PlayerHand(deck.takeCard());
     }
 }
